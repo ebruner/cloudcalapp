@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>App Name:</b>
+  <%= @app.name %>
+</p>
+
+<p>
+  <b>Icon Graphic Image:</b>
+  <%= image_tag(@app.picture_url(:small)) %>
+</p>
+
+
+<%= link_to 'Edit', edit_app_path(@app) %> |
+<%= link_to 'Back', apps_path %>
